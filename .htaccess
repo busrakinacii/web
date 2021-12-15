@@ -1,0 +1,4 @@
+RewriteEngine On
+
+RewriteCond $1 !^(css|js|images|inc|lang)
+RewriteRule ^Blog-Konu/(.*)$ blog_konu.php?WebKartali=$1 [L,QSA]
